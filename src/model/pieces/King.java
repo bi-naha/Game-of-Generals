@@ -1,5 +1,6 @@
 package model.pieces;
 
+import model.Cell;
 import model.Color;
 import model.Player;
 
@@ -9,22 +10,16 @@ public class King extends Piece {
         super(player, color, pieceType);
     }
 
+    @Override
+    public boolean hasMove(Cell start, Cell destination) {
+        return false;
+    }
+
     public King(Color color, PieceType pieceType) {
         super(color, pieceType);
     }
 
-    @Override
-    public boolean isValidMove() {
-        return false;
-    }
-    @Override
-    public void move() {
 
-    }
-    @Override
-    public void upgradedMove() {
-
-    }
     @Override
     public void locate() {
 

@@ -2,14 +2,15 @@ package model;
 
 import lombok.Getter;
 import lombok.Setter;
+import model.pieces.PieceType;
 
 public class GameState {
     private static GameState gameState;
-    @Getter @Setter
+    @Getter
     private final Board board;
-    @Getter @Setter
+    @Getter
     private final Player blackPlayer;
-    @Getter @Setter
+    @Getter
     private final Player whitePlayer;
     @Getter @Setter
     private int turn;
@@ -35,4 +36,12 @@ public class GameState {
         }
         return gameState;
     }
+
+    public Color getTurn() {
+        if (this.turn%2 == 0) {
+            return Color.BLACK;
+        }
+        return Color.WHITE;
+    }
+
 }

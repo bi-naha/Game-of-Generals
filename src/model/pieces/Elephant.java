@@ -16,17 +16,10 @@ public class Elephant extends Piece {
     }
 
     @Override
-    public boolean isValidMove() {
+    public boolean hasMove(Cell start, Cell destination) {
         return false;
     }
-    @Override
-    public void move() {
 
-    }
-    @Override
-    public void upgradedMove() {
-
-    }
     @Override
     public void locate() {
 

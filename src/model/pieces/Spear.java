@@ -1,5 +1,6 @@
 package model.pieces;
 
+import model.Cell;
 import model.Color;
 import model.Player;
 
@@ -14,17 +15,10 @@ public class Spear extends Piece {
     }
 
     @Override
-    public boolean isValidMove() {
+    public boolean hasMove(Cell start, Cell destination) {
         return false;
     }
-    @Override
-    public void move() {
 
-    }
-    @Override
-    public void upgradedMove() {
-
-    }
     @Override
     public void locate() {
 

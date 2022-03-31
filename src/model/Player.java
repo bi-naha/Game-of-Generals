@@ -20,5 +20,12 @@ public class Player {
         this.color = color;
     }
 
+    public void losePiece(Piece piece) {
+        pieces.remove(piece);
+    }
+    public void gainPiece(Piece piece) {
+        pieces.add(piece);
+    }
+
     public void endTurn() {}
 }

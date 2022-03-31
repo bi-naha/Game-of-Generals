@@ -5,7 +5,7 @@ import lombok.Setter;
 import model.pieces.Piece;
 
 public class Cell {
-    @Getter @Setter
+    @Getter
     private final int row, col;
     @Getter @Setter
     private Piece piece;
